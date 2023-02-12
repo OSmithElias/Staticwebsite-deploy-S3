@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-    build:
-        commands:
-         - aws s3 cp . s3://staticwebsite-s3bucket188/ --recursive
+  build:
+    commands:
+      - aws s3 cp . s3://staticwebsite-s3bucket188/ --recursive
     
