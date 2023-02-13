@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-    -aws s3 rm s3://staticwebsite-s3bucket188/ --recursive
+    -aws s3 rm s3://staticwebsite-s3bucket188 --recursive
   build:
     commands:
       - aws s3 cp . s3://staticwebsite-s3bucket188/ --recursive
