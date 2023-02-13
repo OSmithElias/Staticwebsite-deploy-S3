@@ -4,6 +4,10 @@ files:
  - source: /
    destination: /usr/share/nginx/html/
 hooks:
+    BeforeInstall:
+     - location: scripts/delete_nginx.sh
+       timeout: 300
+       runas: root
     ApplicationStop:
      - location: scripts/stop_nginx.sh
        timeout: 300
